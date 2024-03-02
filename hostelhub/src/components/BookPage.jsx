@@ -1,23 +1,23 @@
-// import React from 'react'
 import React, { useState } from "react";
 
-const Home = () => {
-    const [formData, setFormData] = useState({
-        username: "",
-        enrollmentno: "",
-        email: "",
-        phoneno: ""
-      });
-    
-      const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormData((prevState) => ({ ...prevState, [name]: value }));
-      };
-    
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
-      };
+function App() {
+  const [formData, setFormData] = useState({
+    username: "",
+    enrollmentno: "",
+    email: "",
+    phoneno: ""
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <label>
@@ -58,7 +58,5 @@ const Home = () => {
       </label>
       <input type="submit" value="Submit" />
     </form>
-  )
+  );
 }
-
-export default Home

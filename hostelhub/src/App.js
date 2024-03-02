@@ -1,12 +1,14 @@
-import Login from "./components/Login"
-import Home from "./components/Login"
+// import Login from "./components/Login"
+// import Home from "./components/Home"
+import Navbar from "./components/NavBar";
+// import BookPage from "./components/BookPage"
+
 
 function App() {
   return (
     <div>
-      <Login/>
+      <Navbar/>
     </div>
   );
 }
-
 export default App;
