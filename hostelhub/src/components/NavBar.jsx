@@ -10,14 +10,14 @@ const NavBar = () => {
   return (
     <div className='text-[#666666] flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4'>
         <h1 className='w-full text-3xl font-bold text-[#304AC1]'>HostelHub.</h1>
-        <ul className='flex hidden'>
+        <ul className='hidden md:flex'>
             <li className='p-4'>Home</li>
             <li className='p-4'>Booking</li>
             <li className='p-4'>Acount</li>
             <li className='p-4'>About</li>
             <li className='p-4'>Contact</li>
         </ul>
-        <div onClick={handleNav}>
+        <div onClick={handleNav} className='block md:hidden'>
             {!nav ? <AiOutlineClose size={20}/> :<AiOutlineMenu size={20}/>}
         
         </div>
