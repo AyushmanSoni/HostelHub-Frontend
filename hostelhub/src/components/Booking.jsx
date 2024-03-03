@@ -2,10 +2,11 @@ import React from 'react'
 
 const Details = () => {
   return (
-    <div name="contact" className="w-full h-full  p-4 text-[#091553]">
-        <div className="flex flex-col p-4 ml-28  max-w-screen-lg h-full mt-5">
+    <div name="contact" className="w-full h-full flex flex-wrap  p-4 text-[#091553]">
+        
+        <div className="flex flex-col p-4 ml-28  max-w-screen-lg h-full mt-5 w-1/2">
             <div className="pb-8 ">
-                <p className="text-4xl font-bold inline">Booking Details</p>
+                <p className="text-4xl font-bold inline">Enter booking details</p>
                 <p className="py-2 text-[#304AC1]">Submit the form below to book your desired room</p>
             </div>
             <div className="flex ">
@@ -15,13 +16,13 @@ const Details = () => {
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                          Full Name
                          </label>
-                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Additya Goyal"></input>
+                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Ayushman Soni"></input>
                         </div>
                         <div className="w-full md:w-1/2 px-3">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-enrollment-id">
                         Enrollment Number
                         </label>
-                        <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="IIB2022038"/>
+                        <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-enrollment-id" type="text" placeholder="IFE2022005"/>
                         </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -29,9 +30,23 @@ const Details = () => {
                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
                          Enter your College Email
                        </label>
-                       <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="iib22038@iiita.ac.in"/>
+                       <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="ife2022005@iiita.ac.in"/>
                      </div>
                    </div>
+                   <div className='flex flex-wrap -mx-3 mb-6'>
+                        <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                         Roomate's Name
+                         </label>
+                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Siddharth Singh"></input>
+                        </div>
+                        <div className="w-full md:w-1/2 px-3">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Roommate's Enrollment Number
+                        </label>
+                        <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="IEC2022110"/>
+                        </div>
+                    </div>
                    <div className="flex flex-wrap -mx-3 mb-2">
 
                        <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -54,13 +69,17 @@ const Details = () => {
                          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-room">
                            Room number
                          </label>
-                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-room" type="number" placeholder="714"/>
+                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-room" type="number" placeholder="811"/>
                        </div>/
                      </div>
-                   <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 
-                     py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">Let's Talk</button>
+                     
+                   <button className="text-white bg-[#091553]  px-6 
+                     py-3 my-8 flex items-center rounded-md ">Book my room</button>
                 </form>
             </div>
+        </div>
+        <div className=''>
+            <h1 className='md:text-3xl sm:text-1xl text-xl font-bold text-[#091553] '>Details about booked and remaining rooms</h1>
         </div>
     </div>
   )
