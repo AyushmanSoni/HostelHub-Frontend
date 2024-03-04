@@ -45,7 +45,7 @@ const NavBar = () => {
             <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button>
         </ul>
 
-        <div onClick={handleNav} className='block md:hidden cursor-pointer'>
+        <div onClick={handleNav} className='block md:hidden cursor-pointer text-white'>
             {!nav ? <AiOutlineClose size={20}/> :<AiOutlineMenu size={20}/>}
         </div>
 
