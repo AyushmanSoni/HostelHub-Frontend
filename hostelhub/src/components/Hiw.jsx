@@ -1,15 +1,11 @@
 import React from 'react'
-import img1 from '../assests/Room.jpg'
-import img2 from '../assests/roommate.jpg'
-import img3 from '../assests/submit.jpg'
+
 import img4 from '../assests/Room-01.jpeg'
 import img5 from '../assests/roommate-01.jpeg'
 import img6 from '../assests/submit-01.jpeg'
-
-
+import img7 from '../assests/g8.png'
 
 const Hiw = () => {
-
     
   return (
     <div className="flex flex-col items-center justify-center gap-y-10 w-full h-screen">
