@@ -22,21 +22,21 @@ const Hiw = () => {
       </div>
     </div>
     <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 w-[70%]  '>
-        <div className='max-w-sm rounded overflow-hidden border-2 border-[#091553]'>
+        <div className='max-w-sm bg-[#EBEFFA] rounded overflow-hidden border-2 border-[#091553]'>
             <img className='w-full' src={img4} alt="selectroom" />
             <h1 className='font-bold text-[#091553] m-10 text-2xl'>Step 1</h1>
             <div className='text-[#091553] font-semibold m-4 text-center'>
                 Simply select the type of room you want either Single or Double
             </div>
         </div>
-        <div className='max-w-sm rounded overflow-hidden border-2 border-[#091553]'>
+        <div className='max-w-sm rounded bg-[#EBEFFA] overflow-hidden border-2 border-[#091553]'>
             <img className='w-full' src={img5} alt="selectroom" />
             <h1 className='font-bold text-[#091553] m-10 text-2xl'>Step 2</h1>
             <div className='text-[#091553] font-semibold m-4 text-center'>
             Choose who you'd like to have as your roommate in the registration form
             </div>
         </div>
-        <div className='max-w-sm rounded overflow-hidden border-2 border-[#091553]'>
+        <div className='max-w-sm rounded bg-[#EBEFFA] overflow-hidden border-2 border-[#091553]'>
             <img className='w-full' src={img6} alt="selectroom" />
             <h1 className='font-bold text-[#091553] m-10 text-2xl'>Step 3</h1>
             <div className='text-[#091553] font-semibold m-4 text-center'>
