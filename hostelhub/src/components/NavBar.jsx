@@ -6,11 +6,11 @@ const NavBar = () => {
     const links =[
         {
             id: 1,
-            link: "home"
+            link: "Home"
         },
         {
             id: 2,
-            link: "booking"
+            link: "Booking"
         },
         {
             id: 3,
@@ -18,11 +18,11 @@ const NavBar = () => {
         },
         {
             id: 4,
-            link: "about"
+            link: "About"
         },
         {
             id: 5,
-            link: "contact"
+            link: "Contact"
         },
 
     ]
@@ -38,11 +38,11 @@ const NavBar = () => {
             {links.map(({id , link})=>(
                 <li 
                    key={id} 
-                   className='p-6 text-white cursor-pointer hover:scale-110 duration-200'>
+                   className='p-6 text-white font-semibold cursor-pointer hover:scale-110 duration-200'>
                     {link}
                     </li>
             ))}
-            <button className='text-white bg-[#304AC1] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button>
+            <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button>
         </ul>
 
         <div onClick={handleNav} className='block md:hidden cursor-pointer'>
