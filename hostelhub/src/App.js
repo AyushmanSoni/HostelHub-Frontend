@@ -2,6 +2,7 @@
 // import Home from "./components/Home"
 import AboutDouble from "./components/AboutDouble";
 import Booking from "./components/Booking";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Hiw from "./components/Hiw";
 // import Home from "./components/Home";
@@ -24,6 +25,7 @@ function App() {
       {/* <Typeofroom/> */}
       <RoomType/>
       <AboutDouble/>
+      <Footer/>
 
       
     </div>
