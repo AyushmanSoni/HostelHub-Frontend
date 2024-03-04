@@ -12,7 +12,7 @@ const Hero = () => {
                 <ReactTyped className='md:text-3xl sm:text-2xl text-0.5xl font-bold text-[#575C75]'
                 strings={['Hostel booking','roommate matching']} typespeed={40} backspeed={60} loop/>
             </div>
-            <button className='text-white bg-[#091553] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Get Started</button>
+            <button className='text-white bg-[#091553] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Book my room</button>
         </div>
     </div>
   )

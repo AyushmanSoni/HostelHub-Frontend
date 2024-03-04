@@ -1,63 +1,46 @@
-// import React from 'react'
-import React, { useState } from "react";
-
+import React from 'react'
+import vector from '../assests/vecto.png'
 const Home = () => {
-    const [formData, setFormData] = useState({
-        username: "",
-        enrollmentno: "",
-        email: "",
-        phoneno: ""
-      });
-    
-      const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormData((prevState) => ({ ...prevState, [name]: value }));
-      };
-    
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
-      };
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Enrollment number:
-        <input
-          type="text"
-          name="enrollmentno"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Email Id:
-        <input
-          type="text"
-          name="email"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Phone No:
-        <input
-          type="number"
-          name="phoneno"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
+    <div className=" flex justify-center items-center">
+        <div className="flex flex-row justify-center items-center">
+
+            <div className='flex flex-col justify-between items-center mr-10 w-[39%] lg:w-[70%] md:w-full md:mr-0'>
+            <div className="text-5xl lg:text-4xl mb-4 text-[#091553] font-semibold md:text-center leading-[120%]">
+              Nothing is ever lost that cannot be found
+            </div>
+            <div className="text-xl lg:text-lg font-normal text-[#575C75] mb-12 md:text-center">
+              No more waiting for your emails to be answered and an end to the
+              mails spam-o-war. Unite with your lost items in just a few clicks!
+            </div>
+            <div className="w-full md:flex hidden sm:scale-75 mt-20 md:justify-center">
+              <button
+                className="px-20 lg:-mt-8 py-3.5 bg-[#304ac1] text-[#ffffff] font-semibold text-2xl hover:bg-[#435cd0] rounded-lg"
+                // onClick={handleLogin}
+              >
+                Get Started
+              </button>
+            </div>
+            <div className="w-full md:hidden">
+              <button
+                className="px-20  lg:scale-75 lg:-mt-8 py-3.5 bg-[#304ac1] text-[#ffffff] font-medium text-xl hover:bg-[#435cd0] rounded-lg"
+                // onClick={handleLogin}
+              >
+                Get Started
+              </button>
+            </div>
+            </div>
+            
+
+            <div className="hidden md:flex">
+              <img src={vector} alt="" />
+            </div>
+
+          </div>
+          <div className="ml-24 lg:ml-4 md:hidden">
+            <img src={vector} alt="" />
+          </div>
+      </div>
   )
 }
 
