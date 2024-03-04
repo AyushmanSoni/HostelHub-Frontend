@@ -4,7 +4,7 @@ import bed2 from '../assests/Frame 293.png'
 import bed3 from '../assests/Frame 293 (1).png'
 const RoomType = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-y-10 w-full h-screen'>
+    <div className='flex flex-col items-center justify-center gap-y-10 w-full shadow-lg h-screen' >
         <div className='flex flex-col items-center justify-center gap-y-2'>
         <div className="text-5xl font-bold text-[#091553]">
         Which type of room do you want ?
