@@ -1,5 +1,6 @@
 // import Login from "./components/Login"
 // import Home from "./components/Home"
+import AboutDouble from "./components/AboutDouble";
 import Booking from "./components/Booking";
 import Hero from "./components/Hero";
 import Hiw from "./components/Hiw";
@@ -22,6 +23,7 @@ function App() {
       <SingleRoomForm/>
       {/* <Typeofroom/> */}
       <RoomType/>
+      <AboutDouble/>
 
       
     </div>

@@ -14,4 +14,5 @@ const AboutDouble = () => {
   )
 }
 
+
 export default AboutDouble
