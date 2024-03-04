@@ -15,14 +15,14 @@ const RoomType = () => {
         <h1 className='font-bold text-[#304AC1] m-10 text-3xl'>Double Room</h1>
             <img className='w-full' src={bed1} alt="selectroom" />
             
-            <button className="text-white bg-[#091553]  mx-4 justify-center font-semibold
+            <button className="text-white bg-[#091553] hover:bg-[#304AC1] hover:font-semibold mx-4 justify-center font-semibold
                      py-3  px-36 my-4 items-center rounded-md ">Proceed</button>
         </div>
         <div className='max-w-sm rounded overflow-hidden bg-[#EBEFFA] border-2 border-[#091553] shadow-2xl'>
         <h1 className='font-bold text-[#304AC1] m-10 text-3xl'>Single Room</h1>
             <img className='w-full' src={bed3} alt="selectroom" />
             
-            <button className="text-white bg-[#091553]  mx-4 justify-center font-semibold
+            <button className="text-white bg-[#091553] hover:bg-[#304AC1] hover:font-semibold mx-4 justify-center font-semibold
                      py-3  px-36 my-4 items-center rounded-md ">Proceed</button>
         </div>
         </div>
