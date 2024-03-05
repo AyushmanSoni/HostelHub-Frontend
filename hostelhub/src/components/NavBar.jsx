@@ -1,5 +1,6 @@
 import React ,{useState} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import {Link} from 'react-scroll'
 
 const NavBar = () => {
 
@@ -39,7 +40,7 @@ const NavBar = () => {
                 <li 
                    key={id} 
                    className='p-6 text-white font-semibold cursor-pointer hover:scale-110 duration-200'>
-                    {link}
+                    <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
             ))}
             <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button>

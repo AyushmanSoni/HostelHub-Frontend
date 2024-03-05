@@ -2,7 +2,7 @@ import React from 'react'
 
 const Details = () => {
   return (
-    <div name="contact" className="w-full h-full flex flex-wrap  p-4 text-[#091553]">
+    <div name="Booking" className="w-full h-full flex flex-wrap  p-4 text-[#091553]">
         
         <div className="flex flex-col p-4 ml-28  max-w-screen-lg h-full mt-5 w-1/2">
             <div className="pb-8 ">
@@ -36,9 +36,9 @@ const Details = () => {
                    <div className="flex flex-wrap -mx-3 mb-6">
                      <div className="w-full px-3">
                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
-                         Enter your College Email
+                         Roommates's College Email
                        </label>
-                       <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="ife2022005@iiita.ac.in"/>
+                       <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="iec2022110@iiita.ac.in"/>
                      </div>
                    </div>
                    <div className='flex flex-wrap -mx-3 mb-6'>
