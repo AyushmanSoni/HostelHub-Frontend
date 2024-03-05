@@ -10,7 +10,7 @@ const RoomType = () => {
         Which type of room do you want ?
         </div>
         </div>
-        <div className=' flex flex-row gap-8 px-12 sm:px-0 w-[70%] items-center justify-center'>
+        <div className=' flex flex-col sm:flex-row  gap-8 px-12 sm:px-0 sm:w-[70%] items-center justify-center'>
         <div className=' items-center justify-center max-w-sm rounded overflow-hidden bg-[#EBEFFA] border-2 border-[#091553] shadow-2xl'>
         <h1 className='font-bold text-[#304AC1] m-10 text-3xl'>Double Room</h1>
             <img className='w-full' src={bed1} alt="selectroom" />
