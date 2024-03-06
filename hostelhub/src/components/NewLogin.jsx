@@ -1,11 +1,14 @@
 import React from 'react'
 
 
+
 const NewLogin = () => {
   return (
     <div className='flex h-screen'>
       <div className='hidden sm:block w-1/2 bg-gradient-to-t from-[#B2C6EC] to-white text-red-500'>
-        hello 
+        <div>
+          
+        </div>
       </div>
       <div className=' flex flex-col justify-center items-center sm:w-1/2 w-full'>
         <div>
