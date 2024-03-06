@@ -1,17 +1,27 @@
 import React from 'react'
-
+// import hostelimage from '../assests/'
 
 
 const NewLogin = () => {
   return (
     <div className='flex h-screen'>
       <div className='hidden sm:block w-1/2 bg-gradient-to-t from-[#B2C6EC] to-white text-red-500'>
+        <div className='font-extrabold text-[#091553] text-left text-4xl ml-24 mt-16'>
+          HostelHub.
+        </div>
+        <div className='ml-24 mt-20'>
+        <div className='font-bold text-5xl text-[#091553]'>Unlock your</div>
+        <div className='flex flex-wrap mt-2'>
+          <div className='font-bold text-5xl text-[#091553]'>hostel with</div>
+          <div className='ml-2 font-bold text-[#8D98D4] text-5xl'>the ease..</div>
+        </div>
+        </div>
         <div>
-          
+          <img src="" alt="" />
         </div>
       </div>
       <div className=' flex flex-col justify-center items-center sm:w-1/2 w-full'>
-        <div>
+        <div className='mt-16'>
           <div className='sm:text-left text-center text-[#091553] font-bold sm:text-4xl text-3xl'>
             Sign to HostelHub.
           </div>
@@ -31,7 +41,7 @@ const NewLogin = () => {
               Password
             </label>
             <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
-            <input class="appearance-none border-2 border-[#091553] rounded-lg bg-[#EFF5FF] w-full py-2 px-3 text-gray-700 mb-3 leading-tight  focus:bg-white" id="password" type="show ? 'password' : 'text'" placeholder="******************"/>
+            <input class="appearance-none border-2 border-[#091553] rounded-lg bg-[#EFF5FF] w-full py-2 px-3 text-gray-700 mb-3 leading-tight  focus:bg-white" id="password" type="password" placeholder="******************"/>
             {/* <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
 
                     <svg class="h-6 text-gray-700" fill="none" Onclick="show = !show {'hidden': !show, 'block':show }"
@@ -53,7 +63,7 @@ const NewLogin = () => {
                   </div> */}
           </div>
           <button className="text-white hover:bg-[#091553]  px-6 w-full border-2 border-[#091553]
-                     py-2 my-8 flex justify-center items-center text-semibold bg-[#304AC1] rounded-lg ">Book my room</button>
+                     py-2 my-8 flex justify-center items-center text-bold bg-[#304AC1] rounded-lg ">Sign in</button>
             </form>
           </div>
         </div>
