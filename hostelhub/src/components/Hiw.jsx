@@ -10,7 +10,7 @@ const Hiw = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-y-10 w-full h-screen">
     <div className="flex flex-col items-center justify-center gap-y-2">
-      <div className="text-5xl font-semibold text-[#091553]">
+      <div className="sm:text-5xl text-4xl font-semibold text-[#091553]">
         How it works!
       </div>
       <div className="font-normal text-2xl text-[#6d7392]">
