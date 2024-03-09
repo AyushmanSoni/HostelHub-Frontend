@@ -1,6 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Details = () => {
+
+let[rooms ,setrooms] =useState(100)
+
+const addValue =() =>{
+  setrooms(rooms-1)
+}
+// let[avl ,setAvl] =useState(50)
+
+// const decValue =() =>{
+//   setAvl(avl-1)
+// }
+// let[book ,setbook] =useState(100)
+
+// const incValue =() =>{
+//   setbook(book+1)
+// }
+// const alloperation =()=>
+// {
+//   this.addValue();
+//   this.decValue();
+//   this.incValue();
+// }
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Your code here
+//   document.getElementById('myButton').addEventListener('click', function(event) {
+//     event.preventDefault(); // Prevent the default action (which is reloading the page)
+//     // Add your custom logic here
+//   });
+// });
+
+
   return (
     <div name="Booking" className="w-full h-full flex flex-wrap  p-4 text-[#091553]">
         
@@ -81,13 +112,18 @@ const Details = () => {
                        </div>/
                      </div>
                      
-                   <button className="text-white bg-[#091553]  px-6 
+                   <button id='myButton' onClick={addValue} className="text-white bg-[#091553]  px-6 
                      py-3 my-8 flex items-center hover:bg-[#304AC1] rounded-md ">Book my room</button>
                 </form>
             </div>
         </div>
-        <div className=''>
-            <h1 className='md:text-3xl sm:text-1xl text-xl font-bold text-[#091553] '>Details about booked and remaining rooms</h1>
+        <div className='mt-10'>
+            <h1 className=' sm:text-3xl text-xl font-bold text-[#091553] '>Details about booked and remaining rooms</h1>
+            <div>
+              <p className='text-xl font-semibold mt-4'>Total room in hostel : {rooms}</p>
+              <p className='text-xl font-semibold mt-4'>Available rooms : </p>
+              <p className='text-xl font-semibold mt-4'>Booked rooms :</p>
+            </div>
         </div>
     </div>
   )
