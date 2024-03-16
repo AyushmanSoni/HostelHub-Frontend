@@ -1,12 +1,53 @@
-import React, { useState } from 'react'
+import React ,{useRef,useEffect} from 'react'
+import Chart from 'chart.js/auto'
+
+
 
 const Details = () => {
 
-let[rooms ,setrooms] =useState(100)
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
 
-const addValue =() =>{
-  setrooms(rooms-1)
-}
+  useEffect(()=>{
+    if(chartInstance.current){
+      chartInstance.current.destroy();
+    }
+    const myChartRef = chartRef.current.getContext("2d");
+
+    chartInstance.current = new Chart(myChartRef,{
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Booked Rooms',
+          'Available Rooms'
+        ],
+        datasets:[
+          {
+            data:[30,45],
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(54, 162, 235)',
+            ],
+          }
+        ]
+
+      }
+    });
+    return ()=>
+    {
+      if(chartInstance.current){
+        chartInstance.current.destroy();
+      }
+    }
+  },[])
+
+  
+
+// let[rooms ,setrooms] =useState(100)
+
+// const addValue =() =>{
+//   setrooms(rooms-1)
+// }
 // let[avl ,setAvl] =useState(50)
 
 // const decValue =() =>{
@@ -112,18 +153,24 @@ const addValue =() =>{
                        </div>/
                      </div>
                      
-                   <button id='myButton' onClick={addValue} className="text-white bg-[#091553]  px-6 
+                   <button id='myButton'  className="text-white bg-[#091553]  px-6 
                      py-3 my-8 flex items-center hover:bg-[#304AC1] rounded-md ">Book my room</button>
                 </form>
             </div>
         </div>
         <div className='mt-10'>
             <h1 className=' sm:text-3xl text-xl font-bold text-[#091553] '>Details about booked and remaining rooms</h1>
-            <div>
+            {/* <div>
               <p className='text-xl font-semibold mt-4'>Total room in hostel : {rooms}</p>
               <p className='text-xl font-semibold mt-4'>Available rooms : </p>
               <p className='text-xl font-semibold mt-4'>Booked rooms :</p>
-            </div>
+            </div> */}
+            {/* <div style={{ width: '300px', height: '300px' }}>
+        <MinimalPieChart data={data} />
+      </div> */}
+      <div>
+        <canvas ref={chartRef} style={{height:"100px",width:"200px"}}/>
+      </div>
         </div>
     </div>
   )
