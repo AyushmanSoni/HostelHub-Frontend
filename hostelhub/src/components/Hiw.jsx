@@ -1,7 +1,7 @@
 import React from 'react'
 
 import img4 from '../assests/Room-01.jpeg'
-import img5 from '../assests/roommate-01.jpeg'
+import img5 from '../assests/newimg.jpeg'
 import img6 from '../assests/submit-01.jpeg'
 
 

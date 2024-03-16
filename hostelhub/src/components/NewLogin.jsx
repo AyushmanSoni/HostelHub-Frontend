@@ -1,6 +1,5 @@
 import React from 'react'
-// import hostelimage from '../assests/'
-
+import img7 from '../assests/new.png'
 
 const NewLogin = () => {
   return (
@@ -17,7 +16,7 @@ const NewLogin = () => {
         </div>
         </div>
         <div>
-          <img src="" alt="" />
+          <img className='m-auto mt-24 h-[280px] w-[500px]' src={img7} alt="" />
         </div>
       </div>
       <div className=' flex flex-col justify-center items-center sm:w-1/2 w-full'>
