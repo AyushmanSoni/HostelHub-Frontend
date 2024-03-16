@@ -25,8 +25,7 @@ const Details = () => {
           {
             data:[30,45],
             backgroundColor: [
-              'rgb(255, 99, 132)',
-              'rgb(54, 162, 235)',
+              '#091553','#97A7EF'
             ],
           }
         ]
@@ -83,7 +82,7 @@ const Details = () => {
             </div>
             <div className="flex ">
                 <form className='w-full max-w-lg' action="">
-                    <div className='flex flex-wrap -mx-3 mb-6'>
+                    <div className='flex flex-wrap -mx-3 mb-4'>
                         <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                          Full Name
@@ -97,7 +96,7 @@ const Details = () => {
                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-enrollment-id" type="text" placeholder="IFE2022005"/>
                         </div>
                     </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="flex flex-wrap -mx-3 mb-4">
                      <div className="w-full px-3">
                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
                          Enter your College Email
@@ -105,7 +104,7 @@ const Details = () => {
                        <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="ife2022005@iiita.ac.in"/>
                      </div>
                    </div>
-                   <div className="flex flex-wrap -mx-3 mb-6">
+                   <div className="flex flex-wrap -mx-3 mb-4">
                      <div className="w-full px-3">
                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
                          Roommates's College Email
@@ -113,7 +112,7 @@ const Details = () => {
                        <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="iec2022110@iiita.ac.in"/>
                      </div>
                    </div>
-                   <div className='flex flex-wrap -mx-3 mb-6'>
+                   <div className='flex flex-wrap -mx-3 mb-4'>
                         <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                          Roomate's Name

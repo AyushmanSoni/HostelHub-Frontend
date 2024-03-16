@@ -1,6 +1,43 @@
-import React from 'react'
+import React ,{useRef,useEffect} from 'react'
+import Chart from 'chart.js/auto'
 
 const SingleRoomForm = () => {
+
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
+
+  useEffect(()=>{
+    if(chartInstance.current){
+      chartInstance.current.destroy();
+    }
+    const myChartRef = chartRef.current.getContext("2d");
+
+    chartInstance.current = new Chart(myChartRef,{
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Booked Rooms',
+          'Available Rooms'
+        ],
+        datasets:[
+          {
+            data:[30,45],
+            backgroundColor: [
+              '#091553','#97A7EF'
+            ],
+          }
+        ]
+
+      }
+    });
+    return ()=>
+    {
+      if(chartInstance.current){
+        chartInstance.current.destroy();
+      }
+    }
+  },[])
+
   return (
     <div name="contact" className="w-full h-full flex flex-wrap  p-4 text-[#091553]">
         
@@ -11,7 +48,7 @@ const SingleRoomForm = () => {
             </div>
             <div className="flex ">
                 <form className='w-full max-w-lg' action="">
-                    <div className='flex flex-wrap -mx-3 mb-6'>
+                    <div className='flex flex-wrap -mx-3 mb-4'>
                         <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                          Full Name
@@ -25,7 +62,7 @@ const SingleRoomForm = () => {
                         <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-enrollment-id" type="text" placeholder="IFE2022005"/>
                         </div>
                     </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="flex flex-wrap -mx-3 mb-4">
                      <div className="w-full px-3">
                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
                          Enter your College Email
@@ -67,6 +104,9 @@ const SingleRoomForm = () => {
         </div>
         <div className=''>
             <h1 className='md:text-3xl sm:text-1xl text-xl font-bold text-[#091553] '>Details about booked and remaining rooms</h1>
+            <div>
+            <canvas ref={chartRef} style={{height:"30px",width:"120px"}}/>
+            </div>
         </div>
     </div>
   )
