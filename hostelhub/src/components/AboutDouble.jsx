@@ -1,11 +1,13 @@
 import React from 'react'
+import vec from '../assests/frame.png'
 
 const AboutDouble = () => {
   return (
-    <div className='w-full h-full flex flex-wrap bg-[#EFF5FF] p-4 shadow-inner'>
+    <div className='w-full h-full sm:flex bg-[#EFF5FF] p-4 shadow-inner'>
+      
         <div className='flex flex-col p-4 ml-28  max-w-screen-lg h-full mt-5 w-1/2'>
             <div className='pb-8'>
-            <p className="text-4xl font-bold inline">Want to book your room at the earliest ?</p>
+            <p className="text-4xl font-bold text-[#091553] inline">Want to book your room at the earliest ?</p>
             </div>
             <div className='flex'>
                 <ul className='list-disc ml-4'>
@@ -19,6 +21,9 @@ const AboutDouble = () => {
                 </ul>
             </div>
         </div>
+        <div>
+        <img src={vec} alt="" />
+      </div>
     </div>
     
   )
