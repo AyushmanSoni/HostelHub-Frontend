@@ -29,7 +29,7 @@ const NavBar = () => {
         setNav(!nav)
     }
   return (
-    <div className=' flex justify-between items-center h-20 w-full mx-auto px-20 bg-[#091553]'>
+    <div className=' fixed flex justify-between items-center h-20 w-full mx-auto px-20 bg-[#091553]'>
         <h1 className='w-full text-3xl font-bold text-white'>HostelHub.</h1>
         <ul className='hidden md:flex'>
             {links.map(({id , link})=>(

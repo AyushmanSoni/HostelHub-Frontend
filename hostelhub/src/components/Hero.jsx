@@ -3,10 +3,15 @@ import { ReactTyped } from "react-typed";
 import vec1 from '../assests/hero3.png'
 import vec2 from '../assests/hero4.png'
 import { Link } from 'react-router-dom'
-
+import Hiw from './Hiw';
+import AboutDouble from './AboutDouble';
+import Footer from './Footer';
+import NavBar from './NavBar';
 const Hero = () => {
   return (
+    
     <div className='text-black'>
+      <NavBar/>
         <div className='max-w-[800px] w-full h-[400px] sm:h-[320px] pt-28 mx-auto text-center flex flex-col justify-center '>
             <p className='text-[#304AC1] font-bold p-2'>ELEVATE YOUR EXPERIENCE</p>
             <h1 className='md:text-5xl sm:text-4xl text-3xl font-bold md:py-4 text-[#091553]'>Revolutionise your hostel booking</h1>
@@ -31,8 +36,16 @@ const Hero = () => {
             <img className=' ml-20 h-[320px] w-[450px]' src={vec1} alt="" />
           </div>
         </div>
+        <Hiw/>
+        <AboutDouble/>
+        <Footer/>
     </div>
+
+    // <div>
+    //    
+    // </div>
   )
+
 }
 
 export default Hero
