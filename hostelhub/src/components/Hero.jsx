@@ -2,7 +2,7 @@ import React from 'react'
 import { ReactTyped } from "react-typed";
 import vec1 from '../assests/hero3.png'
 import vec2 from '../assests/hero4.png'
-
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -24,7 +24,8 @@ const Hero = () => {
             <img className='h-[320px] w-[450px]' src={vec2} alt="" />
           </div>
           <div className='pl-56 pr-36 justify-center items-center '>
-          <button className='text-white bg-[#091553] hover:bg-[#304AC1] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Book my room</button>
+          <Link to = "/booking">
+          <button className='text-white bg-[#091553] hover:bg-[#304AC1] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Book my room</button>  </Link>
           </div>
           <div>
             <img className=' ml-20 h-[320px] w-[450px]' src={vec1} alt="" />
