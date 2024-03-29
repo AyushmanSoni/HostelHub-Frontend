@@ -1,7 +1,6 @@
 import React ,{useRef,useEffect} from 'react'
 import Chart from 'chart.js/auto'
-
-
+import { Link } from 'react-router-dom';
 
 const Details = () => {
 
@@ -151,9 +150,10 @@ const Details = () => {
                          <input className="appearance-none block w-full bg-[#EFF5FF] text-gray-700 border border-[#091553] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-room" type="number" placeholder="811"/>
                        </div>/
                      </div>
-                     
+                    <Link to= "/booking">
                    <button id='myButton'  className="text-white bg-[#091553]  px-6 
                      py-3 my-8 flex items-center hover:bg-[#304AC1] rounded-md ">Book my room</button>
+                      </Link> 
                 </form>
             </div>
         </div>

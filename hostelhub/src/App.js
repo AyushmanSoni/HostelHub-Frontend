@@ -2,6 +2,7 @@
 // import Home from "./components/Home"
 import AboutDouble from "./components/AboutDouble";
 import Booking from "./components/Booking";
+import ChooseType from "./components/ChooseType";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Hiw from "./components/Hiw";
@@ -10,27 +11,38 @@ import Navbar from "./components/NavBar";
 import NewLogin from "./components/NewLogin";
 import RoomType from "./components/RoomType";
 import SingleRoomForm from "./components/SingleRoomForm";
-import Typeofroom from "./components/Typeofroom";
+import { Routes, Route } from 'react-router-dom';
+
+// import Typeofroom from "./components/Typeofroom";
 // import BookPage from "./components/BookPage"
 
 
 function App() {
   return (
-    <div>
-      <NewLogin/>
-      <Navbar/>
-      {/* <Home/> */}
-      <Hero/>
-      <Hiw/>
-      <Booking/>
-      <SingleRoomForm/>
-      {/* <Typeofroom/> */}
-      <RoomType/>
-      <AboutDouble/>
-      <Footer/>
+    <>
+    <Routes>
+          <Route path='/' element={<NewLogin/>} />
+         <Route path='/home' element={<Hero/>} />
+         <Route path='/booking' element={<Booking/>} />
+  
+    </Routes>
+    </>
+    // <div>
+    //   <NewLogin/>
+    //   <Navbar/>
+    //   <ChooseType/>
+    //   {/* <Home/> */}
+    //   <Hero/>
+    //   <Hiw/>
+    //   <Booking/>
+    //   <SingleRoomForm/>
+    //   {/* <Typeofroom/> */}
+    //   <RoomType/>
+    //   <AboutDouble/>
+    //   <Footer/>
 
       
-    </div>
+    // </div>
   );
 }
 export default App;

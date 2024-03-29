@@ -14,10 +14,6 @@ const NavBar = () => {
             link: "Booking"
         },
         {
-            id: 3,
-            link: "account"
-        },
-        {
             id: 4,
             link: "About"
         },

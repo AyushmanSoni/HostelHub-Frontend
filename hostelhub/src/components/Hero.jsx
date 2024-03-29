@@ -17,14 +17,17 @@ const Hero = () => {
                 strings={['Hostel booking','roommate matching']} typespeed={40} backspeed={60} loop/>
                 </div>
             </div>
-            <button className='text-white bg-[#091553] hover:bg-[#304AC1] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Book my room</button>
+            
         </div>
         <div className='flex'>
           <div>
             <img className='h-[320px] w-[450px]' src={vec2} alt="" />
           </div>
+          <div className='pl-56 pr-36 justify-center items-center '>
+          <button className='text-white bg-[#091553] hover:bg-[#304AC1] w-[200px] rounded-md font-medium my-6 mx-auto py-3'>Book my room</button>
+          </div>
           <div>
-            <img className='ml-[620px] h-[320px] w-[450px]' src={vec1} alt="" />
+            <img className=' ml-20 h-[320px] w-[450px]' src={vec1} alt="" />
           </div>
         </div>
     </div>

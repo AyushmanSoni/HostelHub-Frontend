@@ -1,5 +1,6 @@
 import React from 'react'
 import img7 from '../assests/new.png'
+import { Link } from 'react-router-dom'
 
 const NewLogin = () => {
   return (
@@ -60,9 +61,11 @@ const NewLogin = () => {
                     </svg>
 
                   </div> */}
-          </div>
+          </div> <Link to = "/home">
+
+         
           <button className="text-white hover:bg-[#091553]  px-6 w-full border-2 border-[#091553]
-                     py-2 my-8 flex justify-center items-center text-bold bg-[#304AC1] rounded-lg ">Sign in</button>
+                     py-2 my-8 flex justify-center items-center text-bold bg-[#304AC1] rounded-lg ">Sign in</button>  </Link>
             </form>
           </div>
         </div>
