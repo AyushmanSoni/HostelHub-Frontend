@@ -13,6 +13,8 @@ import RoomType from "./components/RoomType";
 import SingleRoomForm from "./components/SingleRoomForm";
 import { Routes, Route } from 'react-router-dom';
 import Types from "./components/Types";
+import Confirm from "./components/Confirm";
+import Confirm2 from "./components/Confirm2";
 
 // import Typeofroom from "./components/Typeofroom";
 // import BookPage from "./components/BookPage"
@@ -31,6 +33,11 @@ function App() {
          <Route path='/back2' element={<Types/>}/>
          <Route path='/logout' element={<NewLogin/>}/>
          <Route path='/signout' element={<NewLogin/>}/>
+         <Route path='/confirm' element={<Confirm/>}/>
+         <Route path='/home2' element={<Hero/>}/>
+         <Route path='/home3' element={<Hero/>}/>
+         <Route path='/confirm2' element={<Confirm2/>}/>
+
 
 
     </Routes>
