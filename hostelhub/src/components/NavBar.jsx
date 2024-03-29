@@ -32,7 +32,7 @@ const NavBar = () => {
     <div className=' fixed flex justify-between items-center h-20 w-full mx-auto px-20 bg-[#091553]'>
         <h1 className='w-full text-3xl font-bold text-white'>HostelHub.</h1>
         <ul className='hidden md:flex'>
-            {links.map(({id , link})=>(
+            {links.map(({id , link,path})=>(
                 <li 
                    key={id} 
                    className='p-6 text-white font-semibold cursor-pointer hover:scale-110 duration-200'>
@@ -42,6 +42,8 @@ const NavBar = () => {
              <Link to = "/signout">
             <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button></Link>
         </ul>
+
+        
 
         <div onClick={handleNav} className='block md:hidden cursor-pointer text-white'>
             {!nav ? <AiOutlineClose size={20}/> :<AiOutlineMenu size={20}/>}

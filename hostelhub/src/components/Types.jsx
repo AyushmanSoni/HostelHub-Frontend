@@ -9,9 +9,10 @@ const Types = () => {
     <div>
         <div className='shadow-lg pb-24'>
         <div className='flex mt-8'>
-            <h1 className=' text-3xl font-bold text-[#091553] ml-32 w-[80%]'>HostelHub.</h1>
-            <Link to = "/logout">
-            <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center rounded '>Log Out</button></Link>
+        <Link to = "/hostelhub">
+            <h1 className=' text-3xl font-bold text-[#091553] ml-32 w-[80%]'>HostelHub.</h1></Link>
+            <div className='pl-96 ml-72'><Link to = "/logout">
+            <button className='text-white ml-96  bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center rounded '>Log Out</button></Link></div>
         </div>
         <div>
             <div className='pt-12'>

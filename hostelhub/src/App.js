@@ -37,6 +37,7 @@ function App() {
          <Route path='/home2' element={<Hero/>}/>
          <Route path='/home3' element={<Hero/>}/>
          <Route path='/confirm2' element={<Confirm2/>}/>
+         <Route path='/hostelhub' element={<Hero/>}/>
 
 
 
