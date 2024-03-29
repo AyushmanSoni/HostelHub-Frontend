@@ -39,7 +39,8 @@ const NavBar = () => {
                     <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
             ))}
-            <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button>
+             <Link to = "/signout">
+            <button className='text-white bg-[#304AC1] hover:font-semibold hover:bg-[#EFF5FF] hover:text-[#091553] border w-20 h-10 items-center mt-4 ml-6 rounded'>Sign out</button></Link>
         </ul>
 
         <div onClick={handleNav} className='block md:hidden cursor-pointer text-white'>

@@ -1,5 +1,6 @@
 import React ,{useRef,useEffect} from 'react'
 import Chart from 'chart.js/auto'
+import { Link } from 'react-router-dom';
 
 const SingleRoomForm = () => {
 
@@ -43,7 +44,11 @@ const SingleRoomForm = () => {
         
         <div className="flex flex-col p-4 ml-28  max-w-screen-lg h-full mt-5 w-1/2">
             <div className="pb-8 ">
-                <p className="text-4xl font-bold inline">Enter booking details</p>
+              <div>
+              <p className="text-4xl font-bold inline">Enter booking details</p>
+                <Link to = "/back2">
+                <button className=' ml-8 text-white bg-[#304AC1] hover:font-semibold  border w-20 h-10 items-center rounded '>Go Back</button></Link>
+              </div>
                 <p className="py-2 text-[#304AC1]">Submit the form below to book your desired room</p>
             </div>
             <div className="flex ">

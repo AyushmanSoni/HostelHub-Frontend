@@ -26,6 +26,13 @@ function App() {
          <Route path='/home' element={<Hero/>} />
          <Route path='/booking' element={<Types/>}/>
          <Route path='/double' element={<Booking/>}/>
+         <Route path='/single' element={<SingleRoomForm/>}/>
+         <Route path='/back' element={<Types/>}/>
+         <Route path='/back2' element={<Types/>}/>
+         <Route path='/logout' element={<NewLogin/>}/>
+         <Route path='/signout' element={<NewLogin/>}/>
+
+
     </Routes>
     </>
     // <div>
