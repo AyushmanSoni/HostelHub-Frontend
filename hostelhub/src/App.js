@@ -12,6 +12,7 @@ import NewLogin from "./components/NewLogin";
 import RoomType from "./components/RoomType";
 import SingleRoomForm from "./components/SingleRoomForm";
 import { Routes, Route } from 'react-router-dom';
+import Types from "./components/Types";
 
 // import Typeofroom from "./components/Typeofroom";
 // import BookPage from "./components/BookPage"
@@ -23,7 +24,8 @@ function App() {
     <Routes>
           <Route path='/' element={<NewLogin/>} />
          <Route path='/home' element={<Hero/>} />
-         <Route path='/booking' element={<Booking/>}/>
+         <Route path='/booking' element={<Types/>}/>
+         <Route path='/double' element={<Booking/>}/>
     </Routes>
     </>
     // <div>
